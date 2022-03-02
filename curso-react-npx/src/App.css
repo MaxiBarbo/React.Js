@@ -19,17 +19,19 @@ ul {
 a {
     text-decoration: none;
 }
+.main{
+  display: flex;
+  gap:1rem; 
+}  
+ 
 .body{
   height: 200vh;
   background-color: #393E41;
-  display: flex;
-  gap:1rem;
-  
-}   
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) { 
-  .body{
+  .main{
     display: flex;
     flex-direction: column;
     gap: 1rem;

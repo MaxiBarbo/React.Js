@@ -32,7 +32,7 @@ function NavbarComerce(){
                 </Nav>
                 <Nav>
                 <Nav.Link className='navshop' eventKey={2} href="#memes">
-                <Titulo/>
+                <Titulo name='Carrito'/>
                 <Icon className='icono' icon="noto-v1:shopping-cart"/>
                 </Nav.Link>
                 </Nav>

@@ -4,7 +4,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 3px;
     text-align: center;
-    margin-top: 1rem
+    margin-top: 1rem;   
 }
 .listaItem{
     color: grey;
@@ -12,10 +12,9 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 3px;
     text-align: center;
-    margin-top: 1rem;
-    
+    margin-top: 1rem;    
 }
 .cardUno{
-    margin-left: 1rem;
-    
+    margin-left: 1rem;    
 }
+

@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import './titulos.css';
 
-const Titulo = () => {
-    return <div className="titulo">Carrito
-    
-    </div>
+const Titulo = (props) => {
+    return <h4 className='titulo'>{props.name}</h4>
 }
 
 export default Titulo;
