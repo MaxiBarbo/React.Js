@@ -1,11 +1,4 @@
-.titulo{
-    color:darkkhaki;
-    font-size: 1.5em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    letter-spacing: 3px;
-    text-align: center;
-    margin-top: 1rem;   
-}
+
 .listaItem{
     color: grey;
     font-size: 1em;
@@ -17,4 +10,11 @@
 .cardUno{
     margin-left: 1rem;    
 }
-
+.titulo{
+    color:darkkhaki;
+    font-size: 1.3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 1rem;   
+  }

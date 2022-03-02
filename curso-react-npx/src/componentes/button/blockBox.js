@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './blockBox.css';
 
 
-
 const BlockBox = (props) => {
     return(
         <div>

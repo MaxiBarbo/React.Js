@@ -11,8 +11,6 @@
 :root {
   --font-title-family: 'Poppins', sans-serif;
 }
-
-
 ul {
     list-style-type: none;
 }
@@ -28,6 +26,7 @@ a {
   height: 200vh;
   background-color: #393E41;
 }
+
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) { 

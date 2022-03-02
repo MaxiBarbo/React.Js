@@ -18,7 +18,7 @@ function App() {
       <div className='header'>
       <NavbarComerce/>
       </div>
-      <Titulo name='Item List Container'/>
+      <Titulo className='titulo' name='Item List Container'/>
       <div className='main'>
       <BlockBox marca='IPA' prenda='Lata' iconoDivisa={<Icon className='iconoDivisa' icon="jam:coin-f"/>} icono={<Icon className='iconos' icon="lucide:shirt" />} />
       <BlockBox marca= 'APA' prenda='Botella' iconoDivisa={<Icon className='iconoDivisa' icon="jam:coin-f"/>} icono={<Icon className='iconos' icon="emojione-monotone:jeans" />}/>
