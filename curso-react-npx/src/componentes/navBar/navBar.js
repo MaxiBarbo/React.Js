@@ -16,7 +16,7 @@ function NavbarComerce(){
             <img className='imgLogo'
                 src="./Imagenes/lata-beer3.png"
                 alt='' />
-            <Navbar.Brand href=""> App</Navbar.Brand>
+            <Navbar.Brand href=""> App1</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
