@@ -16,7 +16,7 @@ function NavbarComerce(){
             <img className='imgLogo'
                 src="./Imagenes/lata-beer3.png"
                 alt='' />
-            <Navbar.Brand href=""> App1</Navbar.Brand>
+            <Navbar.Brand href=""> App</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
@@ -33,7 +33,7 @@ function NavbarComerce(){
                 <Nav>
                 <Nav.Link className='navshop' eventKey={2} href="#memes">
                 <Titulo name='Carrito'/>
-                <Icon className='icono' icon="noto-v1:shopping-cart"/>
+                <Icon className='icono' icon="noto-v1:shopping-bags"/>
                 </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
