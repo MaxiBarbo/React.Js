@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './blockBox.css';
-
+// import imagen from  "./Imagenes/lata-beer9.jfif";
 
 const BlockBox = (props) => {
     return(
         <div>
             <div class="blockFour">
             <img className='imglatas'
-            src="./Imagenes/lata-beer3.png"
+            src="Imagenes/lata-beer3.png"
             alt='' />
+            
             <h3>{props.marca}</h3>
             <span>{props.icono}</span>
             <h4>{props.prenda}</h4>

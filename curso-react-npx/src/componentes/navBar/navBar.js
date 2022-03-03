@@ -12,15 +12,16 @@ function NavbarComerce(){
 
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container>
             <img className='imgLogo'
-                src="./Imagenes/lata-beer3.png"
+                src="/Imagenes/lata-beer3.png"
                 alt='' />
+            <Container>
+            
             <Navbar.Brand href=""> App</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                <Nav.Link href="#features">Venta</Nav.Link>
+                <Nav.Link href="./componentes/footer7footer.js">Venta</Nav.Link>
                 <Nav.Link href="#pricing">Compra</Nav.Link>
                 <NavDropdown title="Varios" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Uno</NavDropdown.Item>
@@ -43,7 +44,6 @@ function NavbarComerce(){
     )
   }
  
-
   export default NavbarComerce; 
 
 
