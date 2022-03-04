@@ -5,7 +5,7 @@ import './blockBox.css';
 const BlockBox = (props) => {
     return(
         <div>
-            <div class="blockFour">
+            <div className="blockFour">
             <img className='imglatas'
             src="Imagenes/lata-beer3.png"
             alt='' />

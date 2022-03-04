@@ -6,18 +6,22 @@ import NavDropdown  from 'react-bootstrap/NavDropdown';
 import Titulo from '../titulos/titulo';
 import { Icon } from '@iconify/react';
 import './navBar.css';
+import Circulo from '../materialize/switch';
+
 
 
 function NavbarComerce(){ 
 
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            
             <img className='imgLogo'
                 src="/Imagenes/lata-beer3.png"
                 alt='' />
+                <Titulo name='App'/>
+              <Circulo/>   
             <Container>
-            
-            <Navbar.Brand href=""> App</Navbar.Brand>
+            <Navbar.Brand href=""></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">

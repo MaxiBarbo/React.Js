@@ -1,6 +1,8 @@
 .imgLogo{
     width: 4rem;
     height: 4rem;
+    margin-right: 2rem;
+    
 }
 .icono{
     width: 2rem;
@@ -14,3 +16,10 @@
 #navDefault{
     color:darkkhaki;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) { 
+    .imgLogo{
+        margin-right: -2rem;
+    }
+}  
