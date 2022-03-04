@@ -22,10 +22,10 @@ function App() {
        
       </div>
       <div className='main'>
-        <BlockBox marca='Ipa' prenda='Lata' iconoDivisa={<Icon className='iconoDivisa' icon="jam:coin-f"/>} icono={<Icon className='iconos' icon="lucide:shirt" />} />
-        <BlockBox marca= 'Apa' prenda='Botella' iconoDivisa={<Icon className='iconoDivisa' icon="jam:coin-f"/>} icono={<Icon className='iconos' icon="emojione-monotone:jeans" />}/>
-        <BlockBox marca= 'Epa' prenda='Lata' iconoDivisa={<Icon className='iconoDivisa' icon="jam:coin-f"/>} icono={<Icon className='iconos' icon="icon-park-outline:clothes-turtleneck"/>}/>
-        <BlockBox marca= 'Stout' prenda='Lata' iconoDivisa={<Icon className='iconoDivisa' icon="jam:coin-f"/>} icono={<Icon className='iconos' icon="emojione-monotone:beer-mug"/>}/>
+        <BlockBox marca='Ipa' prenda='Lata' iconoDivisa={<Icon className='iconoDivisa' icon="jam:coin-f"/>} icono={<Icon className='iconos' icon="ph:beer-bottle" />} />
+        <BlockBox marca= 'Apa' prenda='Botella' iconoDivisa={<Icon className='iconoDivisa' icon="jam:coin-f"/>} icono={<Icon className='iconos' icon="ph:beer-bottle" />}/>
+        <BlockBox marca= 'Epa' prenda='Lata' iconoDivisa={<Icon className='iconoDivisa' icon="jam:coin-f"/>} icono={<Icon className='iconos' icon="jam:bottle"/>}/>
+        <BlockBox marca= 'Stout' prenda='Lata' iconoDivisa={<Icon className='iconoDivisa' icon="jam:coin-f"/>} icono={<Icon className='iconos' icon="ph:beer-bottle-fill"/>}/>
       </div>
 
       <footer>
