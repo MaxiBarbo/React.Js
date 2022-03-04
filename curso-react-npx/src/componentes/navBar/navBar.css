@@ -6,12 +6,14 @@
 }
 .icono{
     width: 2rem;
-    height: 2rem;   
+    height: 2rem; 
+    margin-left: 2rem;  
 }
 .navshop{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
+    
 }
 #navDefault{
     color:darkkhaki;
@@ -21,5 +23,9 @@
 @media only screen and (max-width: 400px) { 
     .imgLogo{
         margin-right: -2rem;
+        margin-top: 1rem;
+    }
+    .icono{
+        margin-left: 10rem;  
     }
 }  
