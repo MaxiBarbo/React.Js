@@ -14,12 +14,11 @@ function NavbarComerce(){
 
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            
             <img className='imgLogo'
                 src="/Imagenes/lata-beer3.png"
                 alt='' />
-                <Titulo name='App'/>
-              <Circulo/>   
+            <Titulo name='App'/>
+            <Circulo/>   
             <Container>
             <Navbar.Brand href=""></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
