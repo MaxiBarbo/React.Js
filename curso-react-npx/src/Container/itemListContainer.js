@@ -1,27 +1,25 @@
 import React from "react";
 import Card  from "react-bootstrap/Card";
 import Button  from "react-bootstrap/Button";
+import { useState } from 'react'
+import './itemList.css'
 
 function ItemListContainer(){
+const [ count, setCount] = useState( 0 )
+
+const handleCount = () => {
+    
+setCount(count + 1)
+
+}
+
     return( 
-        <div className="listaItem">
-            <h4>Lista Item</h4>
-            <div className="cardUno">
-            <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="src/logo.svg" />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-                </Card.Text>
-                <Button variant="outline-dark">Go somewhere</Button>
-            </Card.Body>
-            </Card>
-            </div>
-        
-        </div>
-        
+        <>
+        <div className="listaItem">Contador
+        <lable >{count}</lable>
+        <button onClick={handleCount}>Click</button>
+</div>
+        </> 
     ) 
 }
 

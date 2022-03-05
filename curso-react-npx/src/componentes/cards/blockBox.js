@@ -7,9 +7,8 @@ const BlockBox = (props) => {
         <div>
             <div className="blockFour">
             <img className='imglatas'
-            src="./Imagenes/lata-beer3.png"
+            src="imagenes/bob-blue.png"
             alt='' />
-            
             <h3>{props.marca}</h3>
             <span>{props.icono}</span>
             <h4>{props.prenda}</h4>

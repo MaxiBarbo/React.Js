@@ -7,6 +7,8 @@ import Titulo from '../titulos/titulo';
 import { Icon } from '@iconify/react';
 import './navBar.css';
 import Circulo from '../materialize/switch';
+import Widget from '../widget/carrito';
+
 
 
 
@@ -15,10 +17,11 @@ function NavbarComerce(){
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <img className='imgLogo'
-                src="./Imagenes/lata-beer3.png"
+                src="./lata-beer8.png"
                 alt='' />
             <Titulo name='App'/>
             <Circulo/>   
+            
             <Container>
             <Navbar.Brand href=""></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -36,7 +39,7 @@ function NavbarComerce(){
                 </Nav>
                 <Nav>
                 <Nav.Link className='navshop' eventKey={2} href="#memes">
-                <Titulo name='Carrito'/>
+               <Widget/>
                 <Icon className='icono' icon="noto-v1:shopping-bags"/>
                 </Nav.Link>
                 </Nav>

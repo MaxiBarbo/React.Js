@@ -12,6 +12,11 @@
     width: 15rem;
     height: 20rem;
 }
+h3{
+    color: antiquewhite;
+    letter-spacing: 2px;
+    
+}
 .iconos{
     color:yellow;
     width: 2rem;
