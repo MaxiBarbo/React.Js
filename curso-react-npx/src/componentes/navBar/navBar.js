@@ -16,10 +16,8 @@ function NavbarComerce(){
             <img className='imgLogo'
                 src="https://i.pinimg.com/564x/a8/f7/51/a8f751db731dc38dfa18e7a81522f42f.jpg"
                 alt='' />
-
             <Titulo name='App'/>
-            <Circulo/>   
-
+                <Circulo/>   
             <Container>
             <Navbar.Brand href=""></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -37,10 +35,8 @@ function NavbarComerce(){
                 </Nav>
                 <Nav>
                 <Nav.Link className='navshop' eventKey={2} href="#memes">   
-
                     <Widget className='widget'/>
                     <Icon className='icono' icon="noto-v1:shopping-bags"/>
-
                 </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
