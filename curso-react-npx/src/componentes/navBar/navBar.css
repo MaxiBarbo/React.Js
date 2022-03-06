@@ -1,10 +1,10 @@
 .imgLogo{
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
     margin-right: 1rem;
     margin-left: 1rem;
     opacity: 50%;
-    border-radius: 2rem;
+    border-radius: 3rem;
     
 }
 .icono{
@@ -14,11 +14,9 @@
 }
 .navshop{
     display: flex;
-    flex-direction: column;
-    font-family: 'Poppins', sans-serif;
-    
-    
+    flex-direction: column;  
 }
+
 #navDefault{
     color:darkkhaki;
     

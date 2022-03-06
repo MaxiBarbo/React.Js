@@ -14,13 +14,8 @@ function App() {
 
   return (
     <div className='body'>
-      <div className='header'>
         <NavbarComerce/>
-      </div>
-
-      <div>
         <Titulo name='Cargando..'/>
-      </div>
         <CardBox/>
     </div>
   );
