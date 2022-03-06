@@ -9,19 +9,17 @@ import './navBar.css';
 import Circulo from '../materialize/switch';
 import Widget from '../widget/carrito';
 
-
-
-
 function NavbarComerce(){ 
 
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <img className='imgLogo'
-                src="./lata-beer8.png"
+                src="/imagenes/beer-fondo-videos2.jfif"
                 alt='' />
+
             <Titulo name='App'/>
             <Circulo/>   
-            
+
             <Container>
             <Navbar.Brand href=""></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -38,9 +36,11 @@ function NavbarComerce(){
                 </NavDropdown>
                 </Nav>
                 <Nav>
-                <Nav.Link className='navshop' eventKey={2} href="#memes">
-               <Widget/>
-                <Icon className='icono' icon="noto-v1:shopping-bags"/>
+                <Nav.Link className='navshop' eventKey={2} href="#memes">   
+
+                    <Widget/>
+                    <Icon className='icono' icon="noto-v1:shopping-bags"/>
+
                 </Nav.Link>
                 </Nav>
             </Navbar.Collapse>

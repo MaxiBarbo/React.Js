@@ -3,7 +3,7 @@ import React from 'react'
 function Widget() {
   return (
     <>
-        Carrtio
+       <h4>Carrito</h4>
     </>
   )
 }
