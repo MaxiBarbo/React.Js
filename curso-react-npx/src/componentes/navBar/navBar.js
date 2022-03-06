@@ -14,7 +14,7 @@ function NavbarComerce(){
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <img className='imgLogo'
-                src="/imagenes/beer-fondo-videos2.jfif"
+                src="https://i.pinimg.com/564x/a8/f7/51/a8f751db731dc38dfa18e7a81522f42f.jpg"
                 alt='' />
 
             <Titulo name='App'/>
@@ -38,7 +38,7 @@ function NavbarComerce(){
                 <Nav>
                 <Nav.Link className='navshop' eventKey={2} href="#memes">   
 
-                    <Widget/>
+                    <Widget className='widget'/>
                     <Icon className='icono' icon="noto-v1:shopping-bags"/>
 
                 </Nav.Link>

@@ -10,13 +10,13 @@ const BlockBox = (props) => {
         <div>
             {/* < img src = {image} alt =''/> */}
             <div className="blockFour">
+            <h3 className='titEstilo'>{props.estilo}</h3>
             <img className='imglatas'
             src={props.url}
             alt='' />
-            <h3>{props.marca}</h3>
             <span>{props.icono}</span>
-            <h4>{props.prenda}</h4>
-            <span>{props.iconoDivisa}{props.price}</span>
+            <h4 className='titEnvase'>{props.envase}</h4>
+            <span>{props.iconoDivisa}<span className='precio'>{props.price}</span></span>
             <Count/>
             <Button className="btnCard" variant="outline-success">Agregar Carrito</Button>
         </div>                 

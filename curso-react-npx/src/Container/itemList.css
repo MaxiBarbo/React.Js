@@ -1,7 +1,9 @@
 .listaItem{
     color: aliceblue;
+    font-family: 'Poppins', sans-serif;
 }
 .contador{
+    font-family: 'Poppins', sans-serif;
   color: whitesmoke;
   font-size: 1em;
 }
@@ -16,7 +18,12 @@
 }
 .cards{
     display: flex;
-    flex-direction: column;
-    justify-self: center;
-    gap:1rem;
+    gap:4rem;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) { 
+    .cards{
+        margin-left: 10%;
+    }  
+}  

@@ -19,7 +19,7 @@ function App() {
       </div>
 
       <div>
-        <Titulo className='titulo' name='Cargando..'/>
+        <Titulo name='Cargando..'/>
       </div>
         <CardBox/>
     </div>
