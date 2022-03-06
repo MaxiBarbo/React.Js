@@ -29,7 +29,7 @@ const handleBool = () => {
         <>
         <div className="listaItem"> 
         <span onClick={handleCount}><Icon className='iconoContador' icon="ant-design:plus-circle-outlined"/></span>
-        <lable className='contador'>{count}</lable>
+        <span className='contador'>{count}</span>
         <span onClick={handleBool} ><Icon className='iconoContador' icon="fluent:subtract-circle-32-regular"/></span>
         <div>{saludo}</div>
         </div>

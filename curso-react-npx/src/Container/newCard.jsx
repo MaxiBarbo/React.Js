@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import BlockBox from "../componentes/cards/blockBox";
+
 import { Icon } from '@iconify/react';
 import './itemList.css'
 
@@ -41,15 +42,22 @@ function CardBox({saludo}){
 
     return(
         <>
+        
            { prods.map((prod) =>  
 
             <div className='cards'>
-                <BlockBox  key={prod.id} price={prod.price} url={prod.imagen} iconoDivisa={<Icon className='iconoDivisa' icon="el:usd"/>} icono={<Icon className='iconos' icon="ph:beer-bottle" />} marca={prod.name} prenda={prod.categoria} />
+                 <BlockBox  key={prod.id} 
+                            price={prod.price}
+                            url={prod.imagen} 
+                            iconoDivisa={<Icon className='iconoDivisa' icon="el:usd"/>} 
+                            icono={<Icon className='iconos' icon="ph:beer-bottle" />} 
+                            marca={prod.name} 
+                            prenda={prod.categoria} />
             </div>
 
             )}
 
-            <button onClick={()=> setBool (!bool)}>Click</button>   
+            {/* <button onClick={()=> setBool (!bool)}>Click</button>   */}
         </>
     )
 }

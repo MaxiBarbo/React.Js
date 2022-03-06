@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Count from '../../Container/contador';
+import Button  from 'react-bootstrap/Button';
 import './blockBox.css';
 // import image from  "./Imagenes/lata-beer9.jfif";
 // import image from './imagenes/bob-blue.png';
@@ -17,9 +18,10 @@ const BlockBox = (props) => {
             <h4>{props.prenda}</h4>
             <span>{props.iconoDivisa}{props.price}</span>
             <Count/>
-        </div>               
-        
+            <Button className="btnCard" variant="outline-success">Agregar Carrito</Button>
+        </div>                 
     </div> 
+
      )
 }
 
