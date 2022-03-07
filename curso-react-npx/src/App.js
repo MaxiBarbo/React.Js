@@ -17,8 +17,10 @@ function App() {
     <div className='body'>
       <NavbarComerce/>
         <div className='main'>
-          <Titulo name='Cargando'/>
-          <Spinner/>
+          <div className='header'>
+            <Titulo name='Cargando'/>
+            <Spinner/>
+          </div>
           <CardBox/>
         </div>
       <Footer/>

@@ -1,5 +1,5 @@
 .header{
-  margin: 0;
+  display: flex;
 }
 *,
 *::before,
@@ -30,7 +30,7 @@ a {
 }
  
 .body{
-  height: 300vh;
+  height: 400vh;
   background-color: #393E41;
   
 }
@@ -45,5 +45,8 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+  .header{
+    justify-content: center;
   }
 }
