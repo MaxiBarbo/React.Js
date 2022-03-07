@@ -6,17 +6,22 @@ import NavbarComerce from './componentes/navBar/navBar';
 // import { Icon } from '@iconify/react';
 import Titulo from './componentes/titulos/titulo';
 import { BrowserRouter as Router } from 'react-router-dom';
-
 import CardBox from './Container/newCard';
+import Footer from './componentes/footer/footer';
+import Spinner from './componentes/titulos/titulos';
 
 
 function App() {
 
   return (
     <div className='body'>
-        <NavbarComerce/>
-        <Titulo name='Cargando..'/>
-        <CardBox/>
+      <NavbarComerce/>
+        <div className='main'>
+          <Titulo name='Cargando'/>
+          <Spinner/>
+          <CardBox/>
+        </div>
+      <Footer/>
     </div>
   );
 }

@@ -28,21 +28,16 @@ ul {
 a {
     text-decoration: none;
 }
-.main{
-  display: flex;
-  gap:1rem; 
-  justify-content: center;
-}  
  
 .body{
   height: 300vh;
   background-color: #393E41;
   
-  
-  
-  
 }
-
+.main{
+  display: flex;
+  gap: 1rem;
+}  
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) { 
@@ -50,6 +45,5 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    align-items: center;
   }
 }
