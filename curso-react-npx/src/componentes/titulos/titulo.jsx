@@ -5,4 +5,5 @@ const Titulo = (props) => {
     return <h4 className='titulo'>{props.name}</h4>
 }
 
-export default Titulo;
+export default Titulo; 
+

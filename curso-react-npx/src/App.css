@@ -8,23 +8,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
   --font-title-family: 'Poppins', sans-serif;
-}
-html {
-  --primary-color: #282c34;
-  --secondary-color: #fff;
-}
-
-/* Variables de color si el tema es dark */
-html[data-theme="dark"] {
-  --primary-color: #fff;
-  --secondary-color: #282c34;
 }
 
 ul {
     list-style-type: none;
 }
+
 a {
     text-decoration: none;
 }

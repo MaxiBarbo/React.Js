@@ -17,7 +17,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 1.4em;
     color: wheat;
-    letter-spacing: 2px;   
+    letter-spacing: 5px;   
     margin-top: -1rem;
 }
 .titEnvase{
@@ -26,6 +26,7 @@
     font-size: 1.1em;
     font: bold;
     color: rgb(165, 165, 165);
+    letter-spacing: 2px;
 }
 .iconos{
     margin-top: .5rem;
@@ -39,7 +40,6 @@
       
 }
 .imglatas{
-    
     height: 30%;
     width: 40%;
     background-image: url();

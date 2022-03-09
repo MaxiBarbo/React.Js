@@ -5,12 +5,11 @@ import Nav  from 'react-bootstrap/Nav';
 import NavDropdown  from 'react-bootstrap/NavDropdown';
 import Titulo from '../titulos/titulo';
 import { Icon } from '@iconify/react';
-import './navBar.css';
 import Circulo from '../materialize/switch';
 import Widget from '../widget/carrito';
+import './navBar.css';
 
 function NavbarComerce(){ 
-
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <img className='imgLogo'
