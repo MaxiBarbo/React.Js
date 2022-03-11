@@ -9,7 +9,6 @@ import Footer from './componentes/footer/footer';
 import Spinner from './componentes/titulos/titulos';
 // import { Newnav } from './componentes/navBar/newNav';
 
-
 function App() {
   return (
     <div className='body'>

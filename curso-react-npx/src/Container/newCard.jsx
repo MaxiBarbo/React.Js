@@ -13,6 +13,8 @@ const productos = [
     { id:5, dataIcon:'ph:beer-bottle-thin', categoria:'lata',name:'Sidra', price:'325', imagen:'https://i.pinimg.com/564x/f0/18/cc/f018cc6a6586054e47c7fc23d777bb6d.jpg'},
 ]
 
+
+
 const fetch = new Promise((resolve, reject) =>{
 
     let condition = true
@@ -27,21 +29,22 @@ const fetch = new Promise((resolve, reject) =>{
 // console.log(task)
 
 function CardBox({}){
-    const [prods, setProds] = useState([])
+    const [listaProds, setProds] = useState([])
 
     useEffect(()=>{
         fetch
         .then(resp => setProds(resp))
         .catch(err => console.log(err))
-        // .finaly(()=> setLoading(1000))
+        .finally(()=> console.log('FInalizado'))
+
 
     }, []  ) // Se agrega al final de la funcion un array vacio
 
-    // console.log(prods)
+    console.log(listaProds)
 
     return(
         <>
-           { prods.map((prod) =>  
+           { listaProds.map((prod) =>  
             <div className='cards'>
                  <BlockBox  key={prod.id} 
                             price={prod.price}
@@ -50,7 +53,7 @@ function CardBox({}){
                             icono={<Icon className='iconos' icon={prod.dataIcon} />} 
                             estilo={prod.name} 
                             envase={prod.categoria} />
-            </div>
+                        </div>
 
             )}
             {/* <button onClick={CardBox}>Click</button>   */}

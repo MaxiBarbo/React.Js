@@ -15,7 +15,7 @@ const BlockBox = (props) => {
                 <span>{props.icono}</span>
                 <h4 className='titEnvase'>{props.envase}</h4>
                 <span>{props.iconoDivisa}<span className='precio'>{props.price}</span></span>
-                <Count/>
+                <Count stock='50'/>
                 <Button className="btnCard" variant="outline-success">Agregar Carrito</Button>
             </form>                 
      )

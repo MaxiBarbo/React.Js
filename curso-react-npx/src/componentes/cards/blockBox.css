@@ -10,7 +10,7 @@
     -webkit-box-shadow: 1px 0px 7px #6d71bf;
     box-shadow: 1px 0px 7px #6d71bf;
     width: 15rem;
-    height: 20rem;
+    height: 25rem;
 }
 
 .titEstilo{
@@ -40,7 +40,7 @@
       
 }
 .imglatas{
-    height: 30%;
+    height: 25%;
     width: 40%;
     background-image: url();
     border-radius: .5rem;
