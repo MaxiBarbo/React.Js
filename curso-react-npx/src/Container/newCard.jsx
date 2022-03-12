@@ -29,6 +29,7 @@ const fetch = new Promise((resolve, reject) =>{
 // console.log(task)
 
 function CardBox({}){
+
     const [listaProds, setProds] = useState([])
 
     useEffect(()=>{
@@ -38,7 +39,7 @@ function CardBox({}){
         .finally(()=> console.log('FInalizado'))
 
 
-    }, []  ) // Se agrega al final de la funcion un array vacio
+    }, []  ) // Se agrega al final de la funcion un array vacio (array de dependecia)
 
     console.log(listaProds)
 
