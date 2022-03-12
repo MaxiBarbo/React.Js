@@ -14,8 +14,6 @@ const productos = [
     { id:5, dataIcon:'ph:beer-bottle-thin', stock:'7',categoria:'lata',name:'Sidra', price:'325', imagen:'https://i.pinimg.com/564x/f0/18/cc/f018cc6a6586054e47c7fc23d777bb6d.jpg'},
 ]
 
-
-
 const fetch = new Promise((resolve, reject) =>{
 
     let condition = true
@@ -39,10 +37,9 @@ function CardBox({}){
         .catch(err => console.log(err))
         .finally(()=> console.log('FInalizado'))
 
-
     }, []  ) // Se agrega al final de la funcion un array vacio (array de dependecia)
 
-    console.log(listaProds)
+    // console.log(listaProds)
 
     return(
         <>

@@ -15,14 +15,15 @@
     margin-top: -0.5rem;
     
 }
-.contadorStock{
-    
+.contadorStock{ 
     color: whitesmoke;
 }
+
 .titStock{
     margin-bottom: 0.5rem;
     color:wheat;
 }
+
 .cards{
     display: flex;
     margin-left: -1rem;

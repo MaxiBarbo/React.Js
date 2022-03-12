@@ -31,7 +31,6 @@ const countLess = () => {
         <span className='contador'>{clickCount}</span>
         <span onClick={countLess} ><Icon className='iconoContador' icon="fluent:subtract-circle-32-regular"/></span> 
         </div>
-        {/* <span className="contadorStock"><span className="titStock">Stock:</span> {props.stock - clickCount.count}</span> */}
         </>   
     ) 
 }
