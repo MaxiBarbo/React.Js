@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import Button  from 'react-bootstrap/Button';
 import Count from '../../Container/contador';
 import './blockBox.css';
@@ -15,6 +14,7 @@ const BlockBox = (props) => {
                 alt=''/>
                 <span>{props.icono}</span>
                 <h4 className='titEnvase'>{props.envase}</h4>
+                <span className='titStock'>Stock: <span className='contadorStock'>{props.stock}</span></span>
                 <span>{props.iconoDivisa}<span className='precio'>{props.price}</span></span>
                 <Count stock={props.stock} initial={1}/>
                 <Button className="btnCard" variant="outline-success">Agregar Carrito</Button>

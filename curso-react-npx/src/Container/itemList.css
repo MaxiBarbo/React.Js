@@ -16,10 +16,11 @@
     
 }
 .contadorStock{
-    margin-top: 0.5rem;
+    
     color: whitesmoke;
 }
 .titStock{
+    margin-bottom: 0.5rem;
     color:wheat;
 }
 .cards{
