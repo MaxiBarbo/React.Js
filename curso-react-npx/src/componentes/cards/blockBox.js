@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Count from '../../Container/contador';
+
 import Button  from 'react-bootstrap/Button';
+import Count from '../../Container/contador';
 import './blockBox.css';
 // import image from  "./Imagenes/lata-beer9.jfif";
 // import image from './imagenes/bob-blue.png';
@@ -15,7 +16,7 @@ const BlockBox = (props) => {
                 <span>{props.icono}</span>
                 <h4 className='titEnvase'>{props.envase}</h4>
                 <span>{props.iconoDivisa}<span className='precio'>{props.price}</span></span>
-                <Count stock={10} initial={1}/>
+                <Count stock={props.stock} initial={1}/>
                 <Button className="btnCard" variant="outline-success">Agregar Carrito</Button>
             </form>                 
      )
