@@ -27,7 +27,4 @@ const BlockBox = (props) => {
      )
      
 }
-
-
-
 export default BlockBox;

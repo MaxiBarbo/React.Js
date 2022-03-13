@@ -23,6 +23,7 @@ a {
  
 .body{
   height: 400vh;
+  width: auto;
   background-color: #393E41;
   
 }
