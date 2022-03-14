@@ -1,7 +1,5 @@
 import React from "react";
-
 import './titulos.css';
-
 
 function Spinner(){
     return(

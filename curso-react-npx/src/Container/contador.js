@@ -22,8 +22,6 @@ const countLess = () => {
         setCount(clickCount - 1)
     }
 }
-
-
     return( 
         <>
         <div className="listaItem"> 

@@ -12,8 +12,7 @@
     margin-right: 1rem;
     width: 1.5rem;
     height: 1.5rem;
-    margin-top: -0.5rem;
-    
+    margin-top: -0.5rem;  
 }
 .contadorStock{ 
     color: whitesmoke;
@@ -24,14 +23,46 @@
     color:wheat;
 }
 
-.cards{
+.mainLatas{
     display: flex;
-    margin-left: -1rem;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+.tituloHeader{
+    color:darkkhaki;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 1rem; 
+}
+.tituloProductos{
+    letter-spacing: 4px;
+    display: flex;
+    gap: 1rem;
+    color: gray;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+}
+.headerCards{
+    display: flex;
+    flex-direction: row;
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) { 
-    .cards{
-        margin-left: 15%;
+    .mainLatas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }  
+    .cards{
+        margin-left: 10%;
+    }
+    .headerCards{
+        display: flex;
+        flex-direction: row;
+    }
 }  

@@ -2,10 +2,7 @@
 import React, { Component } from 'react';
 // import { Container, Form, FormControl, Navbar, Nav, NavDropdown, Offcanvas, Button} from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import Home from '../pages/page1'
-// import Contacto from '../pages/page2'
 import './navBar.css';
-
 export class Newnav extends Component {
   render() {
     return (

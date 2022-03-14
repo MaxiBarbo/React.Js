@@ -1,27 +1,27 @@
-import React, {Component} from 'react';
-import './App.css';
+import React, {Component,lazy, Suspense } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import NavbarComerce from './componentes/navBar/navBar';
-import Titulo from './componentes/titulos/titulo';
-import CardBox from './Container/newCard';
 import Footer from './componentes/footer/footer';
-import Spinner from './componentes/titulos/titulos';
-// import imagen from '../src/imagenes/bob-blue.png'
-// import { BrowserRouter as Router } from 'react-router-dom';
+import Productos from './Container/productos';
+import CardBotellas from './Container/newCardBotellas';
+import CardLatas from './Container/newCardLatas';
+import './App.css';
 
 function App() {
   return (
-    <div className='body'>
-      <NavbarComerce/>
-        <div className='main'>
-          <div className='header'>
-            <Titulo name='Cargando'/>
-            <Spinner/>
-          </div>
-          <CardBox/>
+    <Suspense fallback={<h1>Cargando ...</h1>} >
+      <BrowserRouter>
+        <div className='body'>
+          <NavbarComerce/>
+            <Routes>
+                <Route path="/" element={<Productos name="Productos"/>}/>
+                <Route path="/latas" element={<CardLatas/>}/>
+                <Route path = "/botellas" element={<CardBotellas/>}/> 
+            </Routes>
+            <Footer/>             
         </div>
-        <Titulo name='Productos'/>
-      <Footer/>
-    </div>
+      </BrowserRouter>
+    </Suspense>
   );
 }
 export default App;

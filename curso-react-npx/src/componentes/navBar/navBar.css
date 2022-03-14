@@ -20,6 +20,9 @@
     color:darkkhaki;
     
 }
+.itemNav{
+    margin-right: 1rem;
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) { 

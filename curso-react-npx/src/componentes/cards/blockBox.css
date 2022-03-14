@@ -42,10 +42,8 @@
 .imglatas{
     height: 25%;
     width: 40%;
-    background-image: url();
-    border-radius: .5rem;
-    
-    
+    /* background-image: url(); */
+    border-radius: .5rem;   
 }
 .btnCard{
     width: 80%;

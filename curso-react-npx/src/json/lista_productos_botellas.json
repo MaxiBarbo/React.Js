@@ -1,0 +1,49 @@
+
+[
+    {
+      "id": 1,
+      "dataIcon": "ph:beer-bottle-thin",
+      "stock": 9,
+      "categoria": "botella",
+      "price": 110,
+      "name": "Apa",
+      "imagen": "https://i.pinimg.com/564x/ef/a7/c3/efa7c34182bb20d9e7909ce081ab9609.jpg"
+    },
+    {
+      "id": 2,
+      "dataIcon": "ph:beer-bottle-thin",
+      "stock": 7,
+      "categoria": "botella",
+      "price": 250,
+      "name": "Ipa",
+      "imagen": "https://i.pinimg.com/564x/ef/a7/c3/efa7c34182bb20d9e7909ce081ab9609.jpg"
+    },
+    {
+      "id": 3,
+      "dataIcon": "ph:beer-bottle-fill",
+      "stock": 11,
+      "categoria": "botella",
+      "price": 160,
+      "name": "Stout",
+      "imagen": "https://i.pinimg.com/564x/f4/f6/94/f4f69401d5992cfa7570b2b060a711b7.jpg"
+    },
+    {
+      "id": 4,
+      "dataIcon": "ph:beer-bottle-light",
+      "stock": 10,
+      "categoria": "botella",
+      "price": 150,
+      "name": "Epa",
+      "imagen": "https://i.pinimg.com/564x/ef/a7/c3/efa7c34182bb20d9e7909ce081ab9609.jpg"
+    },
+    {
+      "id": 5,
+      "dataIcon": "ph:beer-bottle-fill",
+      "stock": 10,
+      "categoria": "botella",
+      "price": 200,
+      "name": "Sidra",
+      "imagen": "https://i.pinimg.com/564x/f0/18/cc/f018cc6a6586054e47c7fc23d777bb6d.jpg"
+    }
+    
+  ]

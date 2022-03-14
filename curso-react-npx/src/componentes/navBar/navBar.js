@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink, Link } from 'react-router-dom'
 import Navbar  from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav  from 'react-bootstrap/Nav';
@@ -7,27 +8,29 @@ import Titulo from '../titulos/titulo';
 import { Icon } from '@iconify/react';
 import Circulo from '../materialize/switch';
 import Widget from '../widget/carrito';
+import imgLogo from '../../imagenes/img_logo.jpg'
 import './navBar.css';
 
 function NavbarComerce(){ 
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <img className='imgLogo'
-                src="https://i.pinimg.com/564x/a8/f7/51/a8f751db731dc38dfa18e7a81522f42f.jpg"
-                alt='' />
+             <img className='imgLogo'
+                src={imgLogo}
+                alt=''/>
+            <NavLink to="/">
             <Titulo name='App'/>
-                <Circulo/>   
+            </NavLink>
+            <Circulo/>   
             <Container>
-            <Navbar.Brand href=""></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                <Nav.Link href="./componentes/footer7footer.js">Venta</Nav.Link>
-                <Nav.Link href="#pricing">Compra</Nav.Link>
-                <NavDropdown title="Varios" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Uno</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Dos</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Tres</NavDropdown.Item>
+                    <NavLink to="/latas"><span className='itemNav'>Latas</span></NavLink>
+                    <NavLink to="/botellas"><span className='itemNav'>Botellas</span></NavLink>
+                <NavDropdown title="Todos" id="collasible-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">Latas</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Botellas</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Growler</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.4">link</NavDropdown.Item>
                 </NavDropdown>
@@ -40,8 +43,7 @@ function NavbarComerce(){
                 </Nav>
             </Navbar.Collapse>
             </Container>
-        </Navbar>
-        
+        </Navbar> 
     )
   }
  
