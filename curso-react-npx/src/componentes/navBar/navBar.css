@@ -11,14 +11,11 @@
     height: 2rem; 
     margin-left: 2rem;  
 }
-.navshop{
+.itemsNav{
     display: flex;
-    flex-direction: column;  
-}
-
-#navDefault{
-    color:darkkhaki;
-    
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
 }
 .itemNav{
     margin-right: 1rem;
@@ -27,10 +24,18 @@
 /* Mobile Styles */
 @media only screen and (max-width: 400px) { 
     .imgLogo{
-        margin-right: -2rem;
         margin-top: 1rem;
+        margin-left: 0.5rem;
     }
     .icono{
         margin-left: 45%;  
     }   
+    .itemsNav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;  
+        margin-bottom: 1rem;
+    }
+   
 }  

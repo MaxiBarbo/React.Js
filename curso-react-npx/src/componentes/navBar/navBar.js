@@ -14,13 +14,15 @@ import './navBar.css';
 function NavbarComerce(){ 
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <div className='itemsNav'>
              <img className='imgLogo'
                 src={imgLogo}
                 alt=''/>
-            <NavLink to="/">
-            <Titulo name='Home'/>
-            </NavLink>
-            <Circulo/>   
+                <NavLink to="/">
+                <Titulo name='Home'/>
+                </NavLink>
+                <Circulo/>   
+            </div>
             <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
