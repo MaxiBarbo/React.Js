@@ -18,7 +18,7 @@ function NavbarComerce(){
                 src={imgLogo}
                 alt=''/>
             <NavLink to="/">
-            <Titulo name='App'/>
+            <Titulo name='Home'/>
             </NavLink>
             <Circulo/>   
             <Container>
