@@ -6,6 +6,7 @@ import Productos from './Container/productos';
 import CardBotellas from './Container/newCardBotellas';
 import CardLatas from './Container/newCardLatas';
 import './App.css';
+import Carrito from './componentes/widget/carrito';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/" element={<Productos name="Productos"/>}/>
                 <Route path="/latas" element={<CardLatas/>}/>
                 <Route path = "/botellas" element={<CardBotellas/>}/> 
+                <Route path="/cart" element={<Carrito/>}/>
             </Routes>
             <Footer/>             
         </div>

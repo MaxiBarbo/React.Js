@@ -38,10 +38,10 @@ function NavbarComerce(){
                 </NavDropdown>
                 </Nav>
                 <Nav>
-                <Nav.Link className='navshop' eventKey={2} href="#memes">   
-                    <Widget className='widget'/>
-                    <Icon className='icono' icon="noto-v1:shopping-bags"/>
-                </Nav.Link>
+                    <NavLink to="cart" className={({isActive}) => isActive ? 'active' : ''}>  
+                        <Widget className='widget'/>
+                        <Icon className='icono' icon="noto-v1:shopping-bags"/>
+                    </NavLink>
                 </Nav>
             </Navbar.Collapse>
             </Container>

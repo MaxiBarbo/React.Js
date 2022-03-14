@@ -1,12 +1,14 @@
 import React from 'react'
+import Titulo from '../titulos/titulo';
 import './carrito.css';
 
-function Widget() {
-  return (
-    <>
-       <h4 className='h4'>Carrito</h4>
-    </>
-  )
+function Carrito (){
+
+    return(
+        <div>
+            <Titulo name="Carrito"/>
+        </div>
+    )
 }
 
-export default Widget
+export default Carrito;
