@@ -1,4 +1,4 @@
-import React, {Component,lazy, Suspense } from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import NavbarComerce from './componentes/navBar/navBar';
 import Footer from './componentes/footer/footer';
