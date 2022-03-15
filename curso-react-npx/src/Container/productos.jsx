@@ -5,9 +5,9 @@ import './itemList.css';
 
 function Productos (props){
 
-const imgBotella="https://static.vecteezy.com/system/resources/previews/002/102/907/non_2x/hand-holding-beer-bottle-dark-mode-glyph-icon-vector.jpg";
-const imgLata = "https://static.vecteezy.com/system/resources/previews/002/102/979/non_2x/beer-can-dark-mode-glyph-icon-vector.jpg"
-const imgGrowler = "https://static.vecteezy.com/system/resources/previews/002/102/896/non_2x/beer-mug-dark-mode-glyph-icon-vector.jpg"
+const imgBotella="https://i.pinimg.com/564x/4d/de/19/4dde193abf2d80b7660ebaf106c67d5b.jpg";
+const imgLata = "https://tecmel.es/2026-large_default/cartel-de-led-neon-12-fabricado-en-metacrilato-bar.jpg"
+const imgGrowler = "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6f23f853371331.59380a385784a.gif"
 const itemNav = {listStyleType:'none',color:'white',textDecoration:'none'}
 
     return(
