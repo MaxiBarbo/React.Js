@@ -89,7 +89,7 @@
         justify-content: center;
     }  
     .cards{
-        margin-left: 10%;
+        margin-left: -10%;
     }
     .headerCards{
         display: flex;

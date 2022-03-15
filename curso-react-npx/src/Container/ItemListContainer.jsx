@@ -55,7 +55,7 @@ function ItemListContainer({}){
                 listaProds.map((prod) =>  
                 <div className='cards'>
                     <Link to={`detalle/${prod.id}`} style={Style}>
-                      <span><Icon className='ico' icon='fluent:text-add-space-before-20-regular' /></span></Link> 
+                      <span><Icon className='ico' icon='fluent:text-add-space-before-20-regular'/></span></Link> 
                         <BlockBox   key={prod.id} 
                                     price={prod.price}
                                     url={prod.imagen} 
