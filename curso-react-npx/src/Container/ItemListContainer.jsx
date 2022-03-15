@@ -47,7 +47,6 @@ function ItemListContainer({}){
     console.log(id)
     return(
         <div className="mainLatas">
-         
             {loading ? <div className="headerCards">
                         <Titulo name="Cargando"/>
                         <Spinner/>
@@ -56,7 +55,7 @@ function ItemListContainer({}){
                 listaProds.map((prod) =>  
                 <div className='cards'>
                     <Link to={`detalle/${prod.id}`} style={Style}>
-                      <Titulo name={`id:${prod.id}`}/></Link> 
+                      <span><Icon className='ico' icon='fluent:text-add-space-before-20-regular' /></span></Link> 
                         <BlockBox   key={prod.id} 
                                     price={prod.price}
                                     url={prod.imagen} 
