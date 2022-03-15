@@ -12,33 +12,33 @@ import imgLogo from '../../imagenes/img_logo.jpg'
 import './navBar.css';
 
 function NavbarComerce(){ 
+    const navStyle = { listStyleType:'none',textDecoration:'none'}
+    
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <div className='itemsNav'>
-             <img className='imgLogo'
+                <NavLink to="/" style={navStyle}>
+                <img className='imgLogo'
                 src={imgLogo}
-                alt=''/>
-                <NavLink to="/">
-                <Titulo name='Home'/>
-                </NavLink>
+                alt=''/></NavLink>
+                <NavLink to="/home" style={navStyle}>
+                <Titulo name='Home'/></NavLink> 
                 <Circulo/>   
             </div>
             <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                    <NavLink to="/latas"><span className='itemNav'>Latas</span></NavLink>
-                    <NavLink to="/botellas"><span className='itemNav'>Botellas</span></NavLink>
-                <NavDropdown title="Todos" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Latas</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Botellas</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Growler</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">link</NavDropdown.Item>
-                </NavDropdown>
+                    <NavLink to="categoria/latas" style={navStyle}><span className='itemNav'>Latas</span></NavLink>
+                    <NavLink to="categoria/botellas" style={navStyle}><span className='itemNav'>Botellas</span></NavLink>
+                {/* <NavDropdown title="Todos" id="collasible-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">Bares</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Fabrica</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Nosotros</NavDropdown.Item>
+                </NavDropdown> */}
                 </Nav>
                 <Nav>
-                    <NavLink to="cart" className={({isActive}) => isActive ? 'active' : ''}>  
+                    <NavLink to="cart" style={navStyle} className={({isActive}) => isActive ? 'active' : ''}>  
                         <Widget className='widget'/>
                         <Icon className='icono' icon="noto-v1:shopping-bags"/>
                     </NavLink>
@@ -48,7 +48,6 @@ function NavbarComerce(){
         </Navbar> 
     )
   }
- 
   export default NavbarComerce; 
 
 

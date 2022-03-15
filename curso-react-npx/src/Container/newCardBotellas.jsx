@@ -1,4 +1,5 @@
 import React,{ useState, useEffect } from "react";
+import { NavLink, Link } from 'react-router-dom';
 import BlockBox from "../componentes/cards/blockBox";
 import { Icon } from '@iconify/react';
 import './itemList.css'
@@ -22,7 +23,8 @@ const fetch = new Promise((resolve, reject) =>{
 })
 
 function CardBotellas({}){
-
+    
+    const Style = { listStyleType:'none',textDecoration:'none'}
     const [listaProds, setProds] = useState([])
 
     useEffect(()=>{
@@ -43,7 +45,7 @@ function CardBotellas({}){
             </div>
             {listaProds.map((prod) =>  
                 <div className='cards'>
-                    <BlockBox  key={prod.id} 
+                    <BlockBox   key={prod.id} 
                                 price={prod.price}
                                 url={prod.imagen} 
                                 iconoDivisa={<Icon className='iconoDivisa' icon={"el:usd"}/>} 
@@ -51,8 +53,8 @@ function CardBotellas({}){
                                 estilo={prod.name} 
                                 envase={prod.categoria}
                                 stock={prod.stock}/> 
-                            </div>
-            )}
+                            </div>                
+                )}
         </div>
     )
 }
