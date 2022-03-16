@@ -4,7 +4,7 @@ import './carrito.css';
 function Widget() {
   return (
     <>
-       <h4 className='h4'>Carrito</h4>
+       <h4 className='h4'>Cart</h4>
     </>
   )
 }

@@ -10,7 +10,7 @@ import './itemList.css'
 const urljson = listaProductos;
 console.log(urljson)
 
-const fetch = new Promise((resolve, reject) =>{
+const fetch = new Promise((resolve, reject) =>{ //Funcion para llamar api o json local
 
     let condition = true
     if (condition){
@@ -22,7 +22,8 @@ const fetch = new Promise((resolve, reject) =>{
     }
 })
 
-function ItemListContainer({}){
+function ItemListContainer({}){ // luego de ejuctar el llamado a la api o json se utliza useState para alamcenar info obtenida
+
     const Style = { listStyleType:'none',textDecoration:'none'}
     const [listaProds, setProds] = useState([])
     const [loading, setLoading] = useState(true)
