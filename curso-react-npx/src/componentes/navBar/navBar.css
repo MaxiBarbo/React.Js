@@ -19,8 +19,12 @@
 }
 .itemNav{
     margin-right: 1rem;
-    color: whitesmoke;
+    color: darkkhaki;
     font-size: 1.2em;
+}
+.linkNav{
+    margin-top: 1rem;
+    gap:1rem;
 }
 
 /* Mobile Styles */
@@ -38,5 +42,8 @@
         align-items: center;
         gap: 0.5rem;  
         margin-bottom: 1rem;
+    }
+    .linkNav{
+        margin-top: 1rem;   
     }
 }  

@@ -65,6 +65,9 @@
     color: grey;
     letter-spacing: 3px;
 }
+.titBox:hover{
+    color: darkkhaki;
+}
 .itemNav{
     letter-spacing: 2px;
 }
