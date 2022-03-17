@@ -39,7 +39,7 @@ function NavbarComerce(){
                 </Nav>
                 <Nav>
                     <NavLink to="cart" style={navStyle} className={({isActive}) => isActive ? 'active' : ''}>  
-                        <Widget className='widget'/>
+                        <Widget/>
                         <Icon className='icono' icon="noto-v1:shopping-bags"/>
                     </NavLink>
                 </Nav>

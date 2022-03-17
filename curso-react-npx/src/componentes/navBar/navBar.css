@@ -21,6 +21,12 @@
     margin-right: 1rem;
     color: darkkhaki;
     font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+}
+.itemNav:hover{
+    color: gray;
+    
+    
 }
 .linkNav{
     margin-top: 1rem;

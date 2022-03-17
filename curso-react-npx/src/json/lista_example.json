@@ -2,12 +2,12 @@
 [
     {
       "id": 1,
-      "dataIcon": "ph:beer-bottle-thin",
+      "dataIcon": "",
       "stock": 9,
-      "categoria": "botella",
+      "categoria": "",
       "price": 110,
-      "name": "Apa",
-      "imagen": "https://i.pinimg.com/564x/ef/a7/c3/efa7c34182bb20d9e7909ce081ab9609.jpg"
+      "name": "",
+      "imagen": ""
     },
     {
       "id": 2,

@@ -7,7 +7,7 @@ import Titulo from "../componentes/titulos/titulo";
 import Spinner from "../componentes/titulos/titulos";
 import './itemList.css'
 
-const urljson = listaProductos;
+const urljson = listaProductos.lista;
 console.log(urljson)
 
 const fetch = new Promise((resolve, reject) =>{ //Funcion para llamar api o json local
@@ -56,7 +56,8 @@ function ItemListContainer({}){ // luego de ejuctar el llamado a la api o json s
                 listaProds.map((prod) =>  
                 <div className='cards'>
                     <Link to={`detalle/${prod.id}`} style={Style}>
-                      <span><Icon className='ico' icon='fluent:text-add-space-before-20-regular'/></span></Link> 
+                      <span title="Ver Detale"><Icon className='ico' icon='fluent:text-add-space-before-20-regular'/></span>
+                        </Link> 
                         <BlockBox   key={prod.id} 
                                     price={prod.price}
                                     url={prod.imagen} 

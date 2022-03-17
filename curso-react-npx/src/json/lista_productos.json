@@ -1,5 +1,6 @@
+{
 
-[
+"lista": [
     {
       "id": 1,
       "dataIcon": "ph:beer-bottle-thin",
@@ -56,3 +57,5 @@
     }
    
   ]
+
+}

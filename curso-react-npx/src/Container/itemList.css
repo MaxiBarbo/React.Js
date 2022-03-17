@@ -64,9 +64,12 @@
 .titBox{
     color: grey;
     letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    
 }
 .titBox:hover{
     color: darkkhaki;
+    
 }
 .itemNav{
     letter-spacing: 2px;
@@ -77,6 +80,7 @@
     align-items: center;
 }
 .ico{
+    margin-left: 1rem;
     margin-bottom: -1rem;
     height: 2rem;
     width: 2rem;
