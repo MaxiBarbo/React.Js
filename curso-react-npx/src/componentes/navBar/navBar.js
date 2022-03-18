@@ -8,7 +8,7 @@ import Titulo from '../titulos/titulo';
 import { Icon } from '@iconify/react';
 import Circulo from '../materialize/switch';
 import Widget from '../widget/carrito';
-import imgLogo from '../../imagenes/img_logo.jpg'
+import imgLogo from '../../images/img_logo.jpg'
 import './navBar.css';
 
 function NavbarComerce(){ 
@@ -29,9 +29,9 @@ function NavbarComerce(){
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto linkNav">
-                    <NavLink to="categoria/latas" style={navStyle}><span className='itemNav'>Latas</span></NavLink>
-                    <NavLink to="categoria/botellas" style={navStyle}><span className='itemNav'>Botellas</span></NavLink>
-                {/* <NavDropdown title="Todos" id="collasible-nav-dropdown">
+                    <NavLink to="categoria/latas" style={navStyle}><p className='itemNav'>Latas</p></NavLink>
+                    <NavLink to="categoria/botellas" style={navStyle}><p className='itemNav'>Botellas</p></NavLink>
+                {/* <NavDropdown  title="Todos" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Bares</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Fabrica</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.3">Nosotros</NavDropdown.Item>

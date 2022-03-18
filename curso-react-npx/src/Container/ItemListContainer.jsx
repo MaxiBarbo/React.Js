@@ -56,7 +56,7 @@ function ItemListContainer({}){ // luego de ejuctar el llamado a la api o json s
                 listaProds.map((prod) =>  
                 <div className='cards'>
                     <Link to={`detalle/${prod.id}`} style={Style}>
-                      <span title="Ver Detale"><Icon className='ico' icon='fluent:text-add-space-before-20-regular'/></span>
+                      <p title="Ver Detale"><Icon className='ico' icon='fluent:text-add-space-before-20-regular'/></p>
                         </Link> 
                         <BlockBox   key={prod.id} 
                                     price={prod.price}

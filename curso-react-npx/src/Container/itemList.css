@@ -14,6 +14,9 @@
     height: 1.5rem;
     margin-top: -0.5rem;  
 }
+.iconoContador:hover{
+    color: gray;
+}
 .contadorStock{ 
     color: whitesmoke;
 }
@@ -62,6 +65,7 @@
     border-radius: 1rem;
 }
 .titBox{
+    font-size: 1.3em;
     color: grey;
     letter-spacing: 3px;
     font-family: 'Poppins', sans-serif;
@@ -85,6 +89,9 @@
     height: 2rem;
     width: 2rem;
     color: wheat;
+}
+.ico:hover{
+    color: grey;
 }
 
 /* Mobile Styles */

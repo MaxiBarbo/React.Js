@@ -22,7 +22,7 @@ const BlockBox = (props) => {
                 <span className='titStock'>Stock: <span className='contadorStock'>{props.stock}</span></span>
                 <span>{props.iconoDivisa}<span className='precio'>{props.price}</span></span>
                 <Count stock={props.stock} initial={1} onAdd={onAdd}/>
-                <Button className="btnCard" variant="outline-success">Agregar Carrito</Button>
+                <Button  className="btnCard" variant="outline-success">Agregar Carrito</Button>
             </div>     
      )   
 }

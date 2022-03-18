@@ -3,24 +3,10 @@ import { NavLink, Link } from 'react-router-dom';
 import BlockBox from "../componentes/cards/blockBox";
 import { Icon } from '@iconify/react';
 import './itemList.css'
-import listaProductos from "../json/lista_productos_botellas.json";
 import Titulo from "../componentes/titulos/titulo";
 import Spinner from "../componentes/titulos/titulos";
+import { fetch } from "../componentes/helpers/fetch";
 
-const urljson = listaProductos;
-console.log(urljson)
-
-const fetch = new Promise((resolve, reject) =>{
-
-    let condition = true
-    if (condition){
-        setTimeout(()=>{
-            resolve(urljson)  
-        },2500)
-    }else{
-        reject('400 - Not Found')
-    }
-})
 
 function CardBotellas({}){
     
@@ -34,9 +20,7 @@ function CardBotellas({}){
         .finally(()=> console.log('FInalizado'))    
 
     }, []  ) // Se agrega al final de la funcion un array vacio (array de dependecia)
-    
-    // console.log(urljson)
-    // console.log(listaProds)
+    // console.log(fetch)
     return(
         <div className="mainLatas">
             <div className="headerCards">
