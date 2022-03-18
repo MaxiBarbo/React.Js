@@ -1,6 +1,6 @@
 {
 
-"lista": [
+"listone": [
     {
       "id": 1,
       "dataIcon": "ph:beer-bottle-thin",
@@ -54,6 +54,15 @@
       "price": 129,
       "name": "Scotish",
       "imagen": "https://i.pinimg.com/564x/95/44/85/9544853978e18d3b19d0f14a76c92d3c.jpg"
+    },
+    {
+      "id": 7,
+      "dataIcon": "ph:beer-bottle-light",
+      "stock": 3,
+      "categoria": "growler",
+      "price": 250,
+      "name": "A.Ipa",
+      "imagen": "https://i.pinimg.com/564x/4a/94/24/4a9424bbb85f04fa6eaa516c2b6b98a1.jpg"
     }
    
   ]

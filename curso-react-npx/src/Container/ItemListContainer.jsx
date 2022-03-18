@@ -7,7 +7,7 @@ import Titulo from "../componentes/titulos/titulo";
 import Spinner from "../componentes/titulos/titulos";
 import './itemList.css'
 
-const urljson = listaProductos.lista;
+const urljson = listaProductos.listone;
 console.log(urljson)
 
 const fetch = new Promise((resolve, reject) =>{ //Funcion para llamar api o json local
@@ -25,6 +25,7 @@ const fetch = new Promise((resolve, reject) =>{ //Funcion para llamar api o json
 function ItemListContainer({}){ // luego de ejuctar el llamado a la api o json se utliza useState para alamcenar info obtenida
 
     const Style = { listStyleType:'none',textDecoration:'none'}
+    
     const [listaProds, setProds] = useState([])
     const [loading, setLoading] = useState(true)
 
@@ -43,9 +44,9 @@ function ItemListContainer({}){ // luego de ejuctar el llamado a la api o json s
         .catch(err => console.log(err))
         .finally(() => setLoading(false))
     }
-
+   
     }, [id]  ) // Se agrega al final de la funcion un array vacio (array de dependecia)
-    console.log(id)
+    console.log(listaProds) 
     return(
         <div className="mainLatas">
             {loading ? <div className="headerCards">
@@ -66,9 +67,11 @@ function ItemListContainer({}){ // luego de ejuctar el llamado a la api o json s
                                     icono={<Icon className='iconos' icon={prod.dataIcon} />} 
                                     estilo={prod.name} 
                                     envase={prod.categoria}
-                                    stock={prod.stock}/>
-                </div>                        
-            )}
+                                    stock={prod.stock}/>                  
+                </div>  
+                                   
+            )}     
+                         
         </div>
     )
 }

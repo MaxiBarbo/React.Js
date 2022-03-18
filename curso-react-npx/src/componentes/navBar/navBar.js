@@ -31,6 +31,7 @@ function NavbarComerce(){
                 <Nav className="me-auto linkNav">
                     <NavLink to="categoria/lata" style={navStyle}><p className='itemNav'>Latas</p></NavLink>
                     <NavLink to="categoria/botella" style={navStyle}><p className='itemNav'>Botellas</p></NavLink>
+                    <NavLink to="categoria/growler" style={navStyle}><p className='itemNav'>Growler</p></NavLink>
                 {/* <NavDropdown  title="Todos" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Bares</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Fabrica</NavDropdown.Item>

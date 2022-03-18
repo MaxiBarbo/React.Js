@@ -14,19 +14,19 @@ const itemNav = {listStyleType:'none',color:'white',textDecoration:'none'}
         <div>
             <h4 className="tituloHeader">{props.name}</h4>
             <div className="tituloProductos">
-                <NavLink to="" style={itemNav}>
+                <NavLink to="/categoria/botella" style={itemNav}>
                 <div className="boxBotella">
                 <h4 className="titBox">Botellas</h4>
                 <img className="imgLatas" src={imgBotella} alt=""/>
                 </div>
                 </NavLink>
-                <NavLink to="" activeClassName="active" style={itemNav}>
+                <NavLink to="/categoria/lata" activeClassName="active" style={itemNav}>
                 <div className="boxBotella">
                 <h4 className="titBox">Latas</h4>
                 <img className="imgLatas" src={imgLata} alt=""/>
                 </div>
                 </NavLink>
-                <NavLink to="/" activeClassName="active" style={itemNav}>
+                <NavLink to="/categoria/growler" activeClassName="active" style={itemNav}>
                 <div className="boxBotella">
                 <h4 className="titBox">Growler</h4>
                 <img className="imgLatas" src={imgGrowler} alt=""/>
