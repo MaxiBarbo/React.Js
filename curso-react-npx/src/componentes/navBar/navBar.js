@@ -29,8 +29,8 @@ function NavbarComerce(){
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto linkNav">
-                    <NavLink to="categoria/latas" style={navStyle}><p className='itemNav'>Latas</p></NavLink>
-                    <NavLink to="categoria/botellas" style={navStyle}><p className='itemNav'>Botellas</p></NavLink>
+                    <NavLink to="categoria/lata" style={navStyle}><p className='itemNav'>Latas</p></NavLink>
+                    <NavLink to="categoria/botella" style={navStyle}><p className='itemNav'>Botellas</p></NavLink>
                 {/* <NavDropdown  title="Todos" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Bares</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Fabrica</NavDropdown.Item>

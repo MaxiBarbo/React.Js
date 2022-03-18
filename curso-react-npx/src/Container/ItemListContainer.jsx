@@ -27,6 +27,7 @@ function ItemListContainer({}){ // luego de ejuctar el llamado a la api o json s
     const Style = { listStyleType:'none',textDecoration:'none'}
     const [listaProds, setProds] = useState([])
     const [loading, setLoading] = useState(true)
+
     const {id} = useParams()
 
     useEffect(()=>{
@@ -44,7 +45,6 @@ function ItemListContainer({}){ // luego de ejuctar el llamado a la api o json s
     }
 
     }, [id]  ) // Se agrega al final de la funcion un array vacio (array de dependecia)
-    
     console.log(id)
     return(
         <div className="mainLatas">
@@ -54,6 +54,7 @@ function ItemListContainer({}){ // luego de ejuctar el llamado a la api o json s
                         </div>
               :
                 listaProds.map((prod) =>  
+
                 <div className='cards'>
                     <Link to={`detalle/${prod.id}`} style={Style}>
                       <p title="Ver Detale"><Icon className='ico' icon='fluent:text-add-space-before-20-regular'/></p>

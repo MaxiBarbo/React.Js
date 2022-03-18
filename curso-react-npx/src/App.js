@@ -3,14 +3,10 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import NavbarComerce from './componentes/navBar/navBar';
 import Footer from './componentes/footer/footer';
 import Productos from './Container/productos';
-// import CardBotellas from './Container/newCardBotellas';
-import CardLatas from './Container/ItemListContainer';
-import './App.css';
 import Carrito from './componentes/widget/carrito';
 import ItemListContainer from './Container/ItemListContainer';
 import ItemDetailContainer from './Container/itemDetailContainer/itemDetailContainer';
-
-
+import './App.css';
 
 function App() {
   return (
