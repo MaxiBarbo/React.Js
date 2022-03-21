@@ -4,7 +4,7 @@ import { NavLink, Link } from 'react-router-dom';
 import Count from '../../Container/contador';
 import './blockBox.css';
 
-const BlockBox = (props) => {
+function BlockBox (props) {
 
     const Style = { listStyleType:'none',textDecoration:'none'}
 

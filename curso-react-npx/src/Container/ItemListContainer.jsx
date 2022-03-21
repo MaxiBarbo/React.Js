@@ -2,25 +2,10 @@ import React,{ useState, useEffect, } from "react";
 import { NavLink, Link, useParams } from 'react-router-dom';
 import BlockBox from "../componentes/cards/blockBox";
 import { Icon } from '@iconify/react';
-import listaProductos from "../json/lista_productos.json";
 import Titulo from "../componentes/titulos/titulo";
 import Spinner from "../componentes/titulos/titulos";
 import './itemList.css'
-
-const urljson = listaProductos.listone;
-console.log(urljson)
-
-const fetch = new Promise((resolve, reject) =>{ //Funcion para llamar api o json local
-
-    let condition = true
-    if (condition){
-        setTimeout(()=>{
-            resolve(urljson)  
-        },2500)
-    }else{
-        reject('400 - Not Found')
-    }
-})
+import { fetch } from "../componentes/helpers/fetch";
 
 function ItemListContainer({}){ // luego de ejuctar el llamado a la api o json se utliza useState para alamcenar info obtenida
 

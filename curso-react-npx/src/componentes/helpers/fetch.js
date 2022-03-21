@@ -1,8 +1,8 @@
 import React from "react";
-import listaProductos from "../json/lista_productos.json";
+import listaProductos from "../../json/lista_productos.json";
 
-const urljson = listaProductos;
-console.log(urljson)
+const urljson = listaProductos.listone;
+// console.log(urljson)
 
 export const fetch = new Promise((resolve, reject) =>{
 
