@@ -7,7 +7,7 @@ import Spinner from "../componentes/titulos/titulos";
 import './itemList.css'
 import { fetch } from "../componentes/helpers/fetch";
 
-function ItemListContainer({}){ // luego de ejuctar el llamado a la api o json se utliza useState para alamcenar info obtenida
+function ItemListContainerOne({}){ // luego de ejuctar el llamado a la api o json se utliza useState para alamcenar info obtenida
 
     const Style = { listStyleType:'none',textDecoration:'none'}
     
@@ -59,4 +59,4 @@ function ItemListContainer({}){ // luego de ejuctar el llamado a la api o json s
         </div>
     )
 }
-export default ItemListContainer;
+export default ItemListContainerOne;

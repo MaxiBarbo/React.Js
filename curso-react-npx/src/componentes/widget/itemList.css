@@ -1,0 +1,129 @@
+.listaItem{
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+.contador{
+  color: whitesmoke;
+  font-size: 1em;
+}
+.iconoContador{
+    color:wheat;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: -0.5rem;  
+}
+.iconoContador:hover{
+    color: gray;
+}
+.contadorStock{ 
+    color: whitesmoke;
+}
+
+.titStock{
+    margin-bottom: 0.5rem;
+    color:wheat;
+}
+
+.mainLatas{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+.tituloHeader{
+    color:darkkhaki;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 1rem; 
+}
+.tituloProductos{
+    letter-spacing: 4px;
+    display: flex;
+    color: gray;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+}
+.headerCards{
+    display: flex;
+    flex-direction: row;
+}
+.imgLatas{
+    width: 10rem;
+    height: 12rem;
+    border-radius: 1rem;
+}
+.boxBotella{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 90%;
+    border-radius: 1rem;
+}
+.titBox{
+    font-size: 1.3em;
+    color: grey;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.titBox:hover{
+    color: darkkhaki;
+    
+}
+.itemNav{
+    letter-spacing: 2px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.ico{
+    margin-left: 1rem;
+    margin-bottom: -1rem;
+    height: 2rem;
+    width: 2rem;
+    color: wheat;
+}
+.ico:hover{
+    color: grey;
+}
+.itemsBlock{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) { 
+    .mainLatas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }  
+    .cards{
+        margin-left: 20%;
+    }
+    .headerCards{
+        display: flex;
+        flex-direction: row;
+    }
+    .tituloProductos{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .boxBotella{
+        width: 45%;
+        margin-left: 25%;
+        margin-top: 1.5rem;
+    }
+    .imgLatas{
+       width: 100%;
+    }
+}  

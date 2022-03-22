@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Button  from 'react-bootstrap/Button';
-import { NavLink, Link } from 'react-router-dom';
-import Count from '../../Container/contador';
+// import Button  from 'react-bootstrap/Button';
+// import { NavLink, Link } from 'react-router-dom';
+// import Count from '../itemCount/contador';
 import './blockBox.css';
 
 function BlockBox (props) {
@@ -21,8 +21,8 @@ function BlockBox (props) {
                 <h4 className='titEnvase'>{props.envase}</h4>
                 <span className='titStock'>Stock: <span className='contadorStock'>{props.stock}</span></span>
                 <span>{props.iconoDivisa}<span className='precio'>{props.price}</span></span>
-                <Count stock={props.stock} initial={1} onAdd={onAdd}/>
-                <Button  className="btnCard" variant="outline-success">Agregar Carrito</Button>
+                {/* <Count stock={props.stock} initial={1} onAdd={onAdd}/> */}
+                {/* <Button  className="btnCard" variant="outline-success">Agregar Carrito</Button> */}
             </div>     
      )   
 }

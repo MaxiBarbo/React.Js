@@ -1,11 +1,9 @@
 import React from "react";
-import './itemList.css';
-// import Card  from "react-bootstrap/Card";
-// import Button  from "react-bootstrap/Button";
+import './count.css';
 import { useState, useEffect } from 'react'
 import { Icon } from '@iconify/react';
 
-function Count( { stock, initial, onAdd } ){
+function ItemCount( { stock, initial, onAdd } ){
 
 const [ clickCount, setCount ]  = useState( initial )// return [0,1]
 
@@ -22,15 +20,19 @@ const countLess = () => {
         setCount(clickCount - 1)
     }
 }
+const agregar = () => {
+    onAdd( clickCount )
+}
     return( 
         <>
         <div className="listaItem"> 
         <span onClick={countAdd}><Icon className='iconoContador' icon="ant-design:plus-circle-outlined"/></span>
         <span className='contador'>{clickCount}</span>
         <span onClick={countLess} ><Icon className='iconoContador' icon="fluent:subtract-circle-32-regular"/></span> 
+        <button onClick={ agregar }>Add to Cart</button>
         </div>
         </>   
     ) 
 }
 
-export default Count;
+export default ItemCount;
