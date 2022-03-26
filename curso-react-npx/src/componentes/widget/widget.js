@@ -1,5 +1,5 @@
 import React from 'react'
-import './../cart/carrito.css';
+
 
 function Widget() {
   return (

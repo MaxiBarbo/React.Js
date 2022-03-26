@@ -5,11 +5,13 @@
     margin-left: 1rem;
     border-radius: 3rem;  
 }
-.icono{
+.iconoBags{
     width: 2rem;
     height: 2rem; 
     margin-left: 2rem;  
+    margin-top: 0.5rem;
 }
+
 .itemsNav{
     display: flex;
     flex-direction: row;
@@ -18,7 +20,6 @@
 }
 .itemNav{
     margin-left: 2rem;
-    
     color: darkkhaki;
     font-size: 1.1em;
     font-family: 'Poppins', sans-serif;

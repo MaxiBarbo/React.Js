@@ -63,6 +63,15 @@
       "price": 250,
       "name": "A.Ipa",
       "imagen": "https://i.pinimg.com/564x/cf/8e/f2/cf8ef21e6739cd8082581e44aa5f9971.jpg"
+    },
+    {
+      "id": 8,
+      "dataIcon": "ph:beer-bottle-fill",
+      "stock": 10,
+      "categoria": "growler",
+      "price": 200,
+      "name": "Blonde",
+      "imagen": "https://i.pinimg.com/564x/43/73/1f/43731f71138a30eff9474e3136a64688.jpg"
     }
    
   ]

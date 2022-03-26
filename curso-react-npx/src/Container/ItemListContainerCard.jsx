@@ -1,17 +1,19 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetch } from "../componentes/helpers/fetch";
-import ItemCount from "../componentes/itemCount/contador";
 import ItemList from "../componentes/itemList/itemList";
+import Titulo from "../componentes/titulos/titulo";
+import Spinner from "../componentes/titulos/titulos";
+import './itemListNewCard.css';
 
-
-function ItemListContainer({ saludo }) {
+function ItemListContainer({ }) {
     
     const [ loading, setLoading ] = useState(true)
     const [prods, setProds ] = useState([])
     //console.log(task)
     const { id } = useParams()
     
+    console.log(useParams)   
 
     useEffect(()=> {
         if (id) {
@@ -27,20 +29,17 @@ function ItemListContainer({ saludo }) {
         }
     }, [id])
 
-    const onAdd = (cant) => {
-        console.log(cant)
-    }
-
-
-    console.log(id)
     return (
             <>
-                <div>{saludo}</div> 
-                {       loading ? <h2>Cargando...</h2> 
+            <div className="cartas">
+                {       loading ? <div className="headerCards">
+                                    <Titulo name="Cargando"/>
+                                    <Spinner/>
+                                    </div> 
                     :
                         <ItemList prods={prods} />
                 }
-                {/* <ItemCount initial={1} stock={10} onAdd= { onAdd  } /> */}
+               </div> 
             </>
     )
 }

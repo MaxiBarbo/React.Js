@@ -12,7 +12,6 @@ const itemNav = {listStyleType:'none',color:'white',textDecoration:'none'}
 
     return(
         <div>
-            <h4 className="tituloHeader">{props.name}</h4>
             <div className="tituloProductos">
                 <NavLink to="/categoria/botella" style={itemNav}>
                 <div className="boxBotella">
