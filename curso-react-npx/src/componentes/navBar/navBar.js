@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Nav  from 'react-bootstrap/Nav';
 import Titulo from '../titulos/titulo';
 import { Icon } from '@iconify/react';
-// import Circulo from '../switch/switch';
+import Circulo from '../switch/switch';
 import Widget from '../cart/carrito';
 import imgLogo from '../../images/img_logo.jpg'
 import './navBar.css';
@@ -22,7 +22,7 @@ function NavbarComerce(){
                 alt=''/></NavLink>
                 <NavLink to="/home" style={navStyle}>
                 <Titulo name='Home'/></NavLink> 
-                {/* <Circulo/>    */}
+                <Circulo/>   
             </div>
             <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

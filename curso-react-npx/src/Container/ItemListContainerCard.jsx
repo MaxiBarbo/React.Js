@@ -1,19 +1,19 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { fetch } from "../componentes/helpers/fetch";
+import { collection, doc, getDoc, getDocs, getFirestore, limit, query, where } from 'firebase/firestore'
 import ItemList from "../componentes/itemList/itemList";
 import Titulo from "../componentes/titulos/titulo";
 import Spinner from "../componentes/titulos/titulos";
+import { fetch } from "../helpers/fetch";
 import './itemListNewCard.css';
 
 function ItemListContainer({ }) {
     
     const [ loading, setLoading ] = useState(true)
     const [prods, setProds ] = useState([])
-    //console.log(task)
-    const { id } = useParams()
     
-    console.log(useParams)   
+    const { id } = useParams()
+ 
 
     useEffect(()=> {
         if (id) {
@@ -28,6 +28,20 @@ function ItemListContainer({ }) {
             .finally(()=> setLoading(false))            
         }
     }, [id])
+
+    // useEffect(()=> {
+    //     const db = getFirestore()
+    //     const queryCollection =  collection(db, 'itemsBeer' )
+    //     const queryFilter = query(queryCollection, 
+              
+    //     )
+    //     getDocs(queryFilter)
+    //     .then(resp => setProds( resp.docs.map(producto =>( {id: producto.id, ...producto.data()}) ) ) )
+    //     .catch(err => console.log(err))
+    //     .finally(()=> setLoading(false))   
+    // }, [id])
+
+
 
     return (
             <>

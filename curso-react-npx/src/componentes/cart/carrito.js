@@ -12,10 +12,6 @@ const  {cartList, vaciarCarrito} = useCartContext()
         <div>
             <Titulo name="Carrito"/>
             
-            {/* {cartList.map(prod => <li key={prod.id}>
-                                    nombre:{prod.name}
-                                    categoria:{prod.categoria}
-                                    </li>)} */}
             <Button variant="outline-secondary" onClick={vaciarCarrito}>Vaciar Carrito</Button>                        
         </div>
     )

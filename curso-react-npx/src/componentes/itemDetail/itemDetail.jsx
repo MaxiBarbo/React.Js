@@ -4,7 +4,7 @@ import ItemCount from '../itemCount/contador';
 import { Link } from 'react-router-dom'
 import './itemDetail.css';
 
-const ItemDetail = ({producto}) => {
+const ItemDetail = ({productos}) => {
 
 const [finishProd, setFinish] = useState(false)
 
@@ -12,19 +12,19 @@ const {addToCart} = useCartContext()
 
 const onAdd = (cant) =>{
   console.log(cant)
-  addToCart({...producto, cantidad: cant})
+  addToCart({...productos, cantidad: cant})
   setFinish(true)
 }
 
-console.log(producto)
+console.log(productos)
 
     return (
       <div className="itemCard">
         <div>
-            <img src={producto.imagen} alt = '' />
-            <p>{producto.name}</p>
-            <p>{producto.price}</p>
-            <p>{producto.categoria}</p>
+            <img src={productos.imagen} alt = '' />
+            <p>{productos.name}</p>
+            <p>{productos.price}</p>
+            <p>{productos.categoria}</p>
         </div>
         {finishProd ?
                 <>  
@@ -39,7 +39,7 @@ console.log(producto)
              :
                 <ItemCount initial={1} stock={10} onAdd={onAdd} />
             }
-
+        <li>{productos.name}</li>
       </div>
     )
   }

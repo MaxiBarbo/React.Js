@@ -1,5 +1,5 @@
 import React from "react";
-import listaProductos from "../../json/lista_productos.json";
+import listaProductos from "../json/lista_productos.json";
 
 const productos = listaProductos.listone;
 // console.log(urljson)

@@ -1,13 +1,13 @@
 import React from "react"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { fetch } from "../../componentes/helpers/fetch"
 import ItemDetail from "../../componentes/itemDetail/itemDetail"
+import { fetch } from "../../helpers/fetch"
 
 
 
 function ItemDetailContaianer() {
-    const [producto, setProducto] = useState({})
+    const [productos, setProducto] = useState([])
 
     const { detalleId } = useParams() 
     
@@ -15,8 +15,8 @@ function ItemDetailContaianer() {
 
     useEffect(()=>{
        fetch
-        // .then(prod => prod.find(item => item.id === detalleId))
-        .then(prod => setProducto(prod))
+        .then(prod => prod.find(item => item.id === detalleId))
+        // .then(prod => setProducto(prod))
         .catch(err => console.log(err))
 
     }, [])
@@ -24,7 +24,7 @@ function ItemDetailContaianer() {
     
     return (
         <div>
-            <ItemDetail producto={producto} />  
+            <ItemDetail productos={productos} />  
         </div>
     )
 }
